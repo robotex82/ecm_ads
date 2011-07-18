@@ -1,2 +1,1 @@
-module EcmAds
-end
+require 'ecm/ads'
