@@ -7,7 +7,7 @@ module Ecm
       }
       options = defaults.merge(options)
       
-      unless ad = Ad.where(:position => position).order("last_impression ASC").first
+      unless ad = ::Ad.where(:position => position).order("last_impression ASC").first
         return position
       end
       
