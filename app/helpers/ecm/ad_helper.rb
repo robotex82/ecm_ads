@@ -8,7 +8,7 @@ module Ecm
       options = defaults.merge(options)
       
       unless ad = ::Ad.where(:position => position).order("last_impression ASC").first
-        return position
+        return nil
       end
       
       ad.update_attributes(:last_impression => Time.zone.now, :impressions => ad.impressions+1)
