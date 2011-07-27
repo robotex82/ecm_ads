@@ -1,2 +1,2 @@
-require 'ecm_frontend'
+require 'ecm/frontend'
 require 'ecm/ads'

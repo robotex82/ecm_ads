@@ -7,4 +7,5 @@ Gem::Specification.new do |s|
   s.description = "ECM Ads module. provides ads functionality"
   s.files = Dir["{app,lib,config}/**/*"] + ["MIT-LICENSE", "Rakefile", "Gemfile", "README.rdoc"]
   s.version = "0.0.1"
+  s.add_dependency('ecm_frontend')
 end
