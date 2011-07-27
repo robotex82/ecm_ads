@@ -17,4 +17,4 @@ end
 gem 'ecm_frontend', :git => 'git://github.com/robotex82/ecm_frontend.git'
 gem "paperclip", "~> 2.3"
 gem 'ranked-model'
-gem 'swf_fu'
+gem 'swf_fu', :git => 'git://github.com/robotex82/swf_fu.git'
