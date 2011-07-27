@@ -11,7 +11,7 @@ module Ecm
         return nil
       end
       
-      if ad.banner_image.content_type = "shockwave/flash"
+      if ad.banner_image.content_type = "application/x-shockwave-flash"
         asset_tag = image_tag(ad.banner_image.url, :id => "ad-#{ad.id}", :class => options[:image_class])
       else
         asset_tag = swf_tag(ad.banner_image.url, :id => "ad-#{ad.id}", :class => options[:image_class])
