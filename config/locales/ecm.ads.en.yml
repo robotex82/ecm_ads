@@ -1,0 +1,28 @@
+en:
+  activerecord:
+    models:
+      ad: "Advertisement"
+      ad_format: "Advertisement format"
+      ad_position: "Advertisement postition"
+    attributes:
+      ad:
+        banner_image: "Image"  
+        last_impression: "Last impression"
+        impressions: "Impressions"
+        clicks: "Clicks"
+        link: "Link"
+        created_at: "Created at"
+        updated_at: "Updated at"
+        ad_position: "Position"
+        ad_format: "Format"
+      ad_format:
+        name: "Name"
+        width: "Width"
+        height: "Height"
+        created_at: "Created at"
+        updated_at: "Updated at" 
+      ad_position:
+        name: "Name"
+        description: "Description"  
+        created_at: "Created at"
+        updated_at: "Updated at"          

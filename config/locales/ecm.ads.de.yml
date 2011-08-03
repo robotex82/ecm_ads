@@ -1,0 +1,28 @@
+de:
+  activerecord:
+    models:
+      ad: "Werbebanner"
+      ad_format: "Werbebanner Format"
+      ad_position: "Werbebanner Position"
+    attributes:
+      ad:
+        banner_image: "Bild"  
+        last_impression: "Zuletzt angezeigt"
+        impressions: "Anzahl Abbildungen"
+        clicks: "Anzahl Klicks"
+        link: "Link"
+        created_at: "Erstellt am"
+        updated_at: "Aktualisiert am"
+        ad_position: "Position"
+        ad_format: "Format"
+      ad_format:
+        name: "Name"
+        width: "Breite"
+        height: "Höhe"
+        created_at: "Erstellt am"
+        updated_at: "Aktualisiert am"  
+      ad_position:
+        name: "Name"
+        description: "Beschreibung"  
+        created_at: "Erstellt am"
+        updated_at: "Aktualisiert am"         
