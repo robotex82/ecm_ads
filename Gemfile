@@ -14,7 +14,10 @@ group :test do
   gem 'factory_girl_rails'
 end  
 
+gem 'ecm_core', :git => 'git://github.com/robotex82/ecm_core.git'
 gem 'ecm_frontend', :git => 'git://github.com/robotex82/ecm_frontend.git'
+gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
+gem 'ecm_admin', :git => 'git://github.com/robotex82/ecm_admin.git'
 gem "paperclip", "~> 2.3"
 gem 'ranked-model'
 gem 'swf_fu', :git => 'git://github.com/robotex82/swf_fu.git'

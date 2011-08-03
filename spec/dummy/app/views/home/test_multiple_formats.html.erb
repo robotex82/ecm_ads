@@ -1,0 +1,14 @@
+<div style="width: 340px;">
+<% if Time.now.sec.even? %>
+  <%= display_ad 'advertisement-right', 'Large Rectangle' %>
+  <%= display_ad 'advertisement-right', 'Large Rectangle' %>
+  <%= display_ad 'advertisement-right', 'Wide Skyscraper' %>
+  <%= display_ad 'advertisement-right', 'Wide Skyscraper' %>
+<% else %>
+  <%= display_ad 'advertisement-right', 'Wide Skyscraper' %>
+  <%= display_ad 'advertisement-right', 'Wide Skyscraper' %>
+  <%= display_ad 'advertisement-right', 'Large Rectangle' %>
+  <%= display_ad 'advertisement-right', 'Large Rectangle' %>
+<% end %>
+
+</div>

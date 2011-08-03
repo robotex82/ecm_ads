@@ -16,7 +16,7 @@ describe Ad do
   end
     
   it "should require a position" do
-    @ad = Ad.new(@valid_attributes.merge(:position => nil))
+    @ad = Ad.new(@valid_attributes.merge(:ad_position => nil))
     @ad.should_not be_valid
   end
 end

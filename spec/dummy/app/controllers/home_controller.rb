@@ -1,4 +1,13 @@
-class HomeController < ApplicationController
-  def index
+class HomeController < FrontendController
+  def test_single_banner
   end
-end  
+  
+  def test_dual_banners
+  end  
+  
+  def test_flash
+  end
+  
+  def test_multiple_formats
+  end
+end

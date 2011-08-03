@@ -1,5 +1,5 @@
- Rails.application.routes.draw do |map|
-  resources :ads, :controller => 'ecm/frontend/ads', :only => [] do
+Rails.application.routes.draw do |map|
+  resources :ads, :controller => 'ecm/frontend/ads/ads', :only => [] do
     member do
       get :link
     end

@@ -1,4 +1,11 @@
 Dummy::Application.routes.draw do  
+  get "home/test_single_banner", :to => "home#test_single_banner"
+  get "home/test_dual_banners", :to => "home#test_dual_banners"
+  get "home/test_flash", :to => "home#test_flash"  
+  get "home/test_multiple_formats", :to => "home#test_multiple_formats"  
+  
+  devise_for :admins
+
   root :to => "home#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
