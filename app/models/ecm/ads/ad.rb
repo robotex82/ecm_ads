@@ -4,7 +4,7 @@ class Ecm::Ads::Ad < ActiveRecord::Base
   has_attached_file :banner_image
   validates_attachment_presence :banner_image
   
-  validates :link,           :presence => true
+  validates :link,           :presence => true, :unless => :is_flash_banner?
   validates :ad_position_id, :presence => true
   validates :ad_format_id,   :presence => true  
 
@@ -17,7 +17,9 @@ class Ecm::Ads::Ad < ActiveRecord::Base
   end
   
   ##### 
-
+  def is_flash_banner?
+    banner_image.content_type == "application/x-shockwave-flash" rescue false
+  end
   
   def format_height
     ad_format.height

@@ -20,7 +20,8 @@ module Ecm
         }
         options = defaults.merge(options)
         
-        if ad.banner_image.content_type == "application/x-shockwave-flash"
+        # if ad.banner_image.content_type == "application/x-shockwave-flash"
+        if ad.is_flash_banner?
           asset_tag = swf_tag(ad.banner_image.url, :id => "ad-#{ad.id}", :class => options[:image_class], :width => ad.format_width, :height => ad.format_height, :style => "height: #{ad.format_height}; width: #{ad.format_width};")
         else
           asset_tag = image_tag(ad.banner_image.url, :id => "ad-#{ad.id}", :class => options[:image_class], :style => "height: #{ad.format_height}; width: #{ad.format_width};")
@@ -28,7 +29,11 @@ module Ecm
         
         
         ad.update_attributes(:last_impression => Time.zone.now, :impressions => ad.impressions+1)
-        return link_to asset_tag, link_ad_path(ad), :target => "_blank"
+        if ad.link
+          return link_to asset_tag, link_ad_path(ad), :target => "_blank"
+        else
+          asset_tag
+        end  
       end
     end  
   end
